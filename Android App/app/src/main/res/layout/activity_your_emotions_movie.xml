@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".YourEmotionsMovie">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="12dp"
+                android:text="Select movie when you feel.."
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/titleHappy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/title"
+                android:text="Happy"
+                    android:paddingLeft="15dp"
+                android:textColor="#fff"
+                android:layout_gravity="left" />
+
+            <HorizontalScrollView
+                android:id="@+id/happyScroll"
+                android:layout_below="@+id/titleHappy"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <LinearLayout
+                    android:id="@+id/id_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/image01"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="#000"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/the_avengers_happy"/>
+
+                    <ImageView
+                        android:id="@+id/image02"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:background="#000"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/lion_king_happy"/>
+
+                    <ImageView
+                        android:id="@+id/image03"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/back_to_future_happy"/>
+
+                    <ImageView
+                        android:id="@+id/image04"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/the_wolf_of_wall_street_happy"/>
+                    <ImageView
+                        android:id="@+id/image05"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/how_train_dragon_happy"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/titleNeutral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/happyScroll"
+                android:text="Neutral"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:textColor="#fff"
+                android:layout_gravity="left" />
+
+            <HorizontalScrollView
+                android:id="@+id/neutralScroll"
+                android:layout_below="@+id/titleNeutral"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <LinearLayout
+                    android:id="@+id/id_gallery2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/image06"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/the_silence_of_the_lambs_poster_neutral"/>
+
+                    <ImageView
+                        android:id="@+id/image07"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/the_godfather_neutral"/>
+
+                    <ImageView
+                        android:id="@+id/image08"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/inception_neutral"/>
+
+                    <ImageView
+                        android:id="@+id/image09"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/the_exorcist_neutral"/>
+                    <ImageView
+                        android:id="@+id/image10"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/batman_neutral"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/titleAngry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/neutralScroll"
+                android:text="Angry"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:textColor="#fff"
+                android:layout_gravity="left" />
+            <HorizontalScrollView
+                android:id="@+id/angryScroll"
+                android:layout_below="@+id/titleAngry"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <LinearLayout
+                    android:id="@+id/id_gallery3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/image11"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/jaws_angry"/>
+
+                    <ImageView
+                        android:id="@+id/image12"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/stawars5_angry"/>
+
+                    <ImageView
+                        android:id="@+id/image13"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/fight_club_angry"/>
+
+                    <ImageView
+                        android:id="@+id/image14"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/die_hard_angry"/>
+                    <ImageView
+                        android:id="@+id/image15"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/dead_pool_angry"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/titleSurprise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/angryScroll"
+                android:text="Surprise"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:textColor="#fff"
+                android:layout_gravity="left" />
+            <HorizontalScrollView
+                android:id="@+id/surpriseScroll"
+                android:layout_below="@+id/titleSurprise"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <LinearLayout
+                    android:id="@+id/id_gallery4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/image16"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/the_shining_surprise"/>
+
+                    <ImageView
+                        android:id="@+id/image17"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/matrix_surprise"/>
+
+                    <ImageView
+                        android:id="@+id/image18"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/million_dollar_baby_surprise"/>
+
+                    <ImageView
+                        android:id="@+id/image19"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/shutter_island_surprise"/>
+                    <ImageView
+                        android:id="@+id/image20"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/toy_story_surprise"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/titleSad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/surpriseScroll"
+                android:text="Sad"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:textColor="#fff"
+                android:layout_gravity="left" />
+            <HorizontalScrollView
+                android:id="@+id/sadScroll"
+                android:layout_below="@+id/titleSad"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <LinearLayout
+                    android:id="@+id/id_gallery5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/image21"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/inside_out_sad"/>
+
+                    <ImageView
+                        android:id="@+id/image22"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/a_spaceodyssey_sad"/>
+
+                    <ImageView
+                        android:id="@+id/image23"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/dead_poet_society_sad"/>
+
+                    <ImageView
+                        android:id="@+id/image24"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/harry_potter_sad"/>
+                    <ImageView
+                        android:id="@+id/image25"
+                        android:onClick="makeItTinted"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/the_lala_land_sad"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_below="@+id/sadScroll"
+        android:text="Next"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
